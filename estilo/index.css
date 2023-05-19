@@ -418,23 +418,23 @@ footer {
 @media (max-width: 540px) {
 
     .oferta-imagem-destaque {
-        width: 90%;
+        width: 94%;
         height: 325px;
         margin-top: 15px;
     }
     
     .oferta-quatro-imagens {
-        width: 90%;
+        width: 95%;
     }
 
     .natureza-imagem {
-        width: 90%;
+        width: 95%;
         height: 100%;
     }
        
 
     .limita-secao {
-        width: 90%;
+        width: 95%;
     }
 
     .agrupar-idavolta, .infantil-sim-nao, .preferencias {
