@@ -325,6 +325,7 @@ footer {
 @media (max-width: 768px) {
 
         .limita-secao {
+            margin: 0 auto;
             width: 90%;
         }
 
@@ -435,6 +436,7 @@ footer {
 
     .limita-secao {
         width: 95%;
+        margin: 0 auto;
     }
 
     .agrupar-idavolta, .infantil-sim-nao, .preferencias {
