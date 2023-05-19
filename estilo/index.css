@@ -1,0 +1,460 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #80808029; 
+}
+
+.logo-principal-header {
+    width: 32px;
+    height: 32px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+}
+
+.limita-secao {
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    color: #5d15d1;
+    font-size: 24px;
+    margin-left: 10px;
+
+}
+
+/* FORMULARIO */
+
+.formulario {
+    width: 100%;
+    height: auto;
+    background-image: url(../assets/imagens/bahia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.form {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.tituloform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    background-color: #5d15d1;
+}
+
+.tituloform img {
+    width: 20px;
+    height: 20px;
+    rotate: -45deg;
+}
+
+.tituloform p {
+    font-size: 14px;
+    color: #ffff;
+    margin-left: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffff;
+    padding: 30px 25px 20px 25px;
+}
+
+form h2 {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+label {
+    font-size: 16px;
+}
+
+.digitacao {
+    height: 32px;
+    padding: 0px 5px;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.ida-volta, .origem-destino {
+    border: none;
+    width: 100%;
+}
+
+.agrupar-idavolta {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.ida-volta {
+    padding-right: 10px;
+}
+
+.infantil-sim-nao {
+    display: flex;  
+}
+
+.infantil-sim-nao input {
+   margin: 10px 5px 10px 0px;
+}
+
+.preferencias input {
+    margin: 10px 5px 10px 0px;
+}
+
+.infantil-sim-nao div{
+   width: 120px;
+}
+
+.preferencias {
+    display: flex;
+}
+
+.preferencias div{
+    width: 120px;
+}
+
+button {
+    width: 160px;
+    height: 32px;
+    border: none;
+    background-color: #5d15d1;
+    font-size: 16px;
+    color: #ffff;
+    margin-top: 12px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+
+/* ofertas */
+
+.ofertas-area, .natureza-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0 auto;
+}
+
+.ofertas-titulo, .natureza-titulo {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.ofertas-descricao, .natureza-descricao {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+
+.ofertas-descricao span {
+    font-weight: bold;
+}
+
+.ofertas-imagens {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oferta-imagem-destaque {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.oferta-quatro-imagens {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.oferta-quatro-imagens figure {
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+
+.oferta-imagem-destaque img, .oferta-quatro-imagens img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.oferta-imagem-destaque figcaption, .oferta-quatro-imagens figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    background: rgb(0 0 0 / 50%);
+    font-size: 17px;
+    color: #fff;
+
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+/* NATUREZA AREA */
+
+.natureza-duas-imagens {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.natureza-imagem {
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.natureza-imagem img{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.natureza-imagem div{
+    background-color: #ffff;
+    width: 100%;
+    padding: 20px;
+}
+
+.natureza-imagem div h3 {
+    font-size: 16px;
+}
+
+.natureza-imagem div p {
+    margin-top: 15px;
+    color: grey;
+    font-size: 14px;
+}
+
+/* footer */
+
+footer {
+    margin-top: 32px;
+    background-color: #5d15d1;
+    width: 100%;
+}
+
+.agrupa-footer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+}
+
+.footer-div h2{
+    color: #ffff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-div div{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.footer-div div img {
+    height: 18px;
+}
+
+.footer-div span {
+    color: #ffff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:1100px) {
+    .limita-secao {
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+        .limita-secao {
+            width: 90%;
+        }
+
+        button {
+            width: 100%;
+        }
+
+        .ofertas-imagens {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+        }
+        
+        .oferta-imagem-destaque {
+            width: 100%;
+            height: 325px;
+            margin-top: 15px;
+        }
+        
+        .oferta-quatro-imagens {
+            width: 100%;
+        }
+        
+        .oferta-quatro-imagens figure {
+            width: 100%;
+            height: 225px;
+            margin-top: 15px;
+        }
+        /* FIM OFERTAS */
+
+        /* INICIO NATUREZA */
+
+        .natureza-duas-imagens {
+           display: flex;
+           flex-direction: column;
+        }
+        
+        .natureza-imagem {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .natureza-imagem img{
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        /* FIM NATUREZA */
+
+        /* INICIO FOOTER */
+
+        footer {
+            margin-top: 32px;
+            background-color: #5d15d1;
+            width: 100%;
+        }
+        
+        .agrupa-footer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .footer-div {
+            width: 250px;
+        }
+        
+        .footer-div h2{
+            color: #ffff;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .footer-div div{
+            display: flex;
+            align-items: center;
+            margin: 5px 0px;
+        }
+        
+        .footer-div div img {
+            height: 18px;
+        }
+        
+        .footer-div span {
+            color: #ffff;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+}
+
+@media (max-width: 540px) {
+
+    .oferta-imagem-destaque {
+        width: 90%;
+        height: 325px;
+        margin-top: 15px;
+    }
+    
+    .oferta-quatro-imagens {
+        width: 90%;
+    }
+
+    .natureza-imagem {
+        width: 90%;
+        height: 100%;
+    }
+       
+
+    .limita-secao {
+        width: 90%;
+    }
+
+    .agrupar-idavolta, .infantil-sim-nao, .preferencias {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .agrupa-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A agência de Viagens encontra o hotel certo para você!">
+    <link rel="stylesheet" href="estilo/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
+    <title>Agência de Viagens</title>
+ </head>
+ <body>
+    <!-- HEADER -->
+        <header>
+            <div class="topo limita-secao">
+                <img class="logo-principal-header" src="assets/imagens/local-logo.png" title="Local-logo">
+                <p>Agência de Viagens</p>
+            </div>
+        </header>
+        <!-- FIM HEADER -->
+
+        <!-- INICIO MAIN -->
+        <main>
+            <!-- PRIMEIRA SEÇÃO -->
+            <section class="formulario">
+                <!-- titulo do form -->
+                <div class="form limita-secao">
+                    <div class="tituloform limita-secao">
+                        <img src="assets/imagens/aviao.png" title="Aviãoimagem">
+                        <p>Solicite um orçamento</p>
+                    </div>
+                
+                <!-- fim titulo form -->
+                
+                <!-- inicio formulário -->
+                <form class="limita-secao" method="POST" action="https://www.meusite.com.br/login/">
+                    <h2>Informe seus dados</h2>
+
+                    <!-- NOME -->
+                    <label for="name">Nome</label>
+                    <input class="digitacao" type="text" name="nome" id="name" required minlength="3" placeholder="Nome completo">
+
+                    <!-- email -->
+                    <label for="email">Email</label>
+                    <input class="digitacao" type="email" name="email" id="email " placeholder="Email para contato ">
+
+                    <!-- celular -->
+                    <label for="celular">Celular</label>
+                    <input class="digitacao" type="tel" name="celular" id="celular" placeholder="(xx) xxxxx-xxxx">
+
+                    <!-- DATA IDA/VOLTA -->
+                    <div class="agrupar-idavolta">
+                        <fieldset class="ida-volta">
+                            <div class="div-ida">
+                                <label for="ida">Data da ida</label>
+                                <input class="digitacao" type="date" name="partida" id="ida">
+                            </div>
+                            <div class="div-volta">
+                                <label for="volta">Data da volta</label>
+                                <input class="digitacao" type="date" name="chegada" id="volta">
+                            </div>
+                        </fieldset>
+                        <!-- ORIGEM/DESTINO -->
+                        <fieldset class="origem-destino">
+                            <label for="ori">Origem</label>
+                            <select class="digitacao"  name="origem" id="ori" class="origem">
+                             <option value="">Partindo de</option>
+                             <option value="AM">Amazonas</option>
+                             <option value="RJ">Rio de Janeiro</option>
+                             <option value="SP">São Paulo</option>
+                             <option value="GO">Goias</option>
+                             <option value="MA">Maranhão</option>
+                            </select>
+                            <!-- divisão select -->
+                            <label for="dest">Destino</label>
+                            <select class="digitacao"  name="destino" id="dest" class="destino">
+                            <option value="">Indo para</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="GO">Goias</option>
+                            <option value="MA">Maranhão</option>
+                            </select>
+                        </fieldset>
+                    </div>
+
+                    <!-- quarto infantil -->
+
+                    <div class="agrupar-preferencias">
+                        <label for="">Quarto com cama infantil?</label>
+                        <div class="infantil-sim-nao">
+                            <div class="agrupar-infantil">
+                                <input type="radio" name="infantil[]" id="sim">
+                                <label for="nao">Não</label>
+                            </div>
+                            <div class="agrupar-infantil">
+                                <input type="radio" name="infantil[]" id="nao">
+                                <label for="sim">Sim</label>
+                            </div>
+                        </div>
+                        <label for="">Preferências de hospedagem</label>
+                        <div class="preferencias">
+                            <div>
+                                <input type="checkbox" name="preferencias[]" id="piscina" value="piscina">
+                                <label for="piscina">Piscina</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="preferencias[]" id="wifi" value="wifi">
+                                <label for="wifi">WI-FI</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="preferencias[]" id="garagem" value="garagem">
+                                <label for="garagem">Garagem</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="preferencias[]" id="suite" value="suite">
+                                <label for="suite">Suite</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BOTÃO -->
+                    <button type="submit">Solicitar orçamento</button>
+                </form>
+            </div>
+                <!-- fim formulário -->
+
+            </section>
+
+            <!-- SEGUNDA SEÇÃO -->
+
+            <section class="ofertas-area limita-secao">
+                <h2 class="ofertas-titulo">Ofertas</h2>
+                <h3 class="ofertas-descricao">Com até <span>50%</span> de desconto.</h3>
+                <div class="ofertas-imagens">
+                    <figure class="oferta-imagem-destaque">
+                        <img src="assets/imagens/rio.jpg" alt="Rio de Janeiro - Ciadade Maravilhosa" title="Rio de Janeiro - Brasil">
+                        <figcaption>Rio de Janeiro</figcaption>
+                    </figure>
+                    <div class="oferta-quatro-imagens">
+                        <figure>
+                            <img src="assets/imagens/manaus.jpg" alt="Manaus" title="Manaus">
+                            <figcaption>Manaus</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/imagens/niteroi.jpg" alt="Ponte Rio-Niterói" title="Ponte Rio-Niterói - RJ">
+                            <figcaption>Rio de Janeiro</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/imagens/saopaulo.jpg" alt="São Paulo - SP" title="São Paulo - Brasil">
+                            <figcaption>São Paulo</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/imagens/maranhao.jpg" alt="Maranhão" title="Maranhão - Brasil">
+                            <figcaption>Maranhão</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TERCEIRA SEÇÃO -->
+
+            <section class="natureza-area limita-secao">
+                <h2 class="natureza-titulo">Explore a Natureza</h2>
+                <h3 class="natureza-descricao">Viaje conosco e veja o melhor que a natureza tem a oferecer.</h3>
+                <div class="natureza-duas-imagens">
+                    <figure class="natureza-imagem">
+                        <img src="assets/imagens/lencol.jpg" alt="Lençois Maranhenses - Brasil" title="Lençois Maranhenses - Brasil">
+                        <div>
+                            <h3>Lençois Maranhenses, Brasil</h3>
+                            <p>Ida e volta a partir de R$79</p>
+                        </div>
+                    </figure>
+                    <figure class="natureza-imagem">
+                        <img src="assets/imagens/goias.jpg" alt="Cachoeira Santa bárbara - GO" title="Cachoeira Santa Bárbara - GO">
+                        <div>
+                            <h3>Cachoeira Santa Bárbara, Brasil</h3>
+                            <p>Ida e volta por R$139</p>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <!-- FIM DO MAIN -->
+
+        <!-- inicio footer -->
+        <footer>
+            <div class="limita-secao agrupa-footer">
+                <div class="footer-div">
+                    <h2>Contato</h2>
+                    <div>
+                        <img src="assets/imagens/local.png"><span>Rio de Janeiro, RJ</span>
+                    </div>
+
+                    <div>
+                        <img src="assets/imagens/telefone.png"><span>Telefone: (21) 9999-9999</span>
+                    </div>
+
+                    <div>
+                        <img src="assets/imagens/email.png"><span>Email:contato@agencia.com.br</span>
+                    </div>
+                </div>
+
+                 <!-- segunda div do footer lado direito -->
+
+                <div class="footer-div">
+                    <h2>Nossas Redes Sociais</h2>
+                    <div>
+                        <img src="assets/imagens/fb.png"><span>Rio de Janeiro, RJ</span>
+                    </div>
+
+                    <div>
+                        <img src="assets/imagens/ig.png"><span>Telefone: (21) 9999-9999</span>
+                    </div>
+
+                    <div>
+                        <img src="assets/imagens/tt.png"><span>Email:contato@agencia.com.br</span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </footer>
+
+ </body>
+</html>
